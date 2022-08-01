@@ -1,0 +1,4 @@
+https://jsoup.org/cookbook/extracting-data/selector-syntax
+https://mkyong.com/java/java-how-to-get-all-links-from-a-web-page/
+https://stackoverflow.com/questions/5762491/how-to-print-color-in-console-using-system-out-println
+https://www.instagram.com/direct/t/340282366841710300949128117700498285836/

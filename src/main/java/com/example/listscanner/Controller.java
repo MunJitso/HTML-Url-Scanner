@@ -1,6 +1,5 @@
 package com.example.listscanner;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
@@ -18,12 +17,12 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-public class HelloController {
+public class Controller {
     @FXML
     public ListView<Hyperlink> outputList;
     private File myObj;
     private void openBrowser(String url){
-        Application application = new HelloApplication();
+        javafx.application.Application application = new Application();
         application.getHostServices().showDocument(url);
     }
     public void isValid(String url){

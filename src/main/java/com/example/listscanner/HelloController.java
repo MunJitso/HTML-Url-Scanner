@@ -68,24 +68,15 @@ public class HelloController {
                 int i = 0;
                 while (true){
                     File file = new File("output\\");
-                    if(file.mkdir()){
-                        System.out.println("Folder is created successfully");
-                    }else{
-                        System.out.println("Error Found!");
-                    }
+                    if(file.mkdir()) System.out.println();
                     myObj = new File("output\\list"+ i + ".txt");
                     if (myObj.createNewFile()) {
-                        System.out.println("File created: " + myObj.getName());
                         break;
                     } else {
-                        System.out.println("File already exists.");
                         i++;
                     }
                 }
-            } catch (IOException e) {
-                System.out.println("An error occurred.");
-                e.printStackTrace();
-            }
+            } catch (IOException ignored) {}
             for (String link : findLinks(f.getAbsolutePath())) {
                 isValid(link);
             }
